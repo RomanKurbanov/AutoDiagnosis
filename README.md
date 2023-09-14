@@ -1,8 +1,9 @@
 # AutoDiagnosis
 
-Для тестовых запусков используется база H2 - она развертывается и заполняется при запуске приложения.
+For test runs, the H2 database is used - it is deployed and filled when the application is launched.
 
-Можно к ней подключиться во время работы приложения:
+You can connect to it while the application is running:
+
 ```
 driver: H2
 Connection type: Remote
@@ -14,4 +15,4 @@ Database: mem
 URL: jdbc:h2:tcp://localhost:9092/mem:db
 ```
 
-Известна проблема с работой проекта на Java 11. Рекомендую использовать 8-ую.
+There is a known issue with the project running on Java 11. I recommend using version 8.
